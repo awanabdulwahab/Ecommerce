@@ -1,0 +1,16 @@
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\bin\Debug\EcommerceDatabase.dll.config
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\bin\Debug\EcommerceDatabase.dll
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\bin\Debug\EcommerceDatabase.pdb
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\bin\Debug\EcommerceClassLibrary.dll
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\bin\Debug\EntityFramework.dll
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\bin\Debug\EntityFramework.SqlServer.dll
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\bin\Debug\EcommerceClassLibrary.pdb
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\bin\Debug\EntityFramework.xml
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\bin\Debug\EntityFramework.SqlServer.xml
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.csprojAssemblyReference.cache
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.csproj.CoreCompileInputs.cache
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.csproj.CopyComplete
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.dll
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.pdb
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.Migrations.intialized.resources
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.csproj.GenerateResource.cache
