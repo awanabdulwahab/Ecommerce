@@ -106,3 +106,11 @@ D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\obj\Debug\EcommerceStore.Web.cs
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\obj\Debug\EcommerceStore.Web.csproj.CopyComplete
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\obj\Debug\EcommerceStore.dll
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\obj\Debug\EcommerceStore.pdb
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\bin\EcommerceClassLibrary.dll
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\bin\EcommerceClassLibrary.pdb
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\bin\EcommerceServices.dll
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\bin\EcommerceDatabase.dll
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\bin\EcommerceServices.pdb
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\bin\EcommerceServices.dll.config
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\bin\EcommerceDatabase.pdb
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceStore\bin\EcommerceDatabase.dll.config

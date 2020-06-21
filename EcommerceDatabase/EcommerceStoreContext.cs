@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EcommerceDatabase
 {
-    public class EcommerceStoreContext : DbContext
+    public class EcommerceStoreContext : DbContext, IDisposable
     {
         public EcommerceStoreContext() : base("ecommerce")
         {

@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CatagoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -235,6 +236,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Catagory\Create.cshtml" />
+    <Content Include="Views\Catagory\Index.cshtml" />
+    <Content Include="Views\Catagory\edit.cshtml" />
+    <Content Include="Views\Catagory\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -251,6 +256,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EcommerceClassLibrary\EcommerceClassLibrary.csproj">
+      <Project>{81274f82-1bec-4dd8-a3d9-199bdf6dd38f}</Project>
+      <Name>EcommerceClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EcommerceServices\EcommerceServices.csproj">
+      <Project>{81ce834b-9376-4c40-acb7-cc52e1ce0b1c}</Project>
+      <Name>EcommerceServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
