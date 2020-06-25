@@ -1,0 +1,108 @@
+﻿@model List<ProductModel>
+@{
+    ViewBag.Title = "ProductTable";
+}
+
+<div >
+    <table>
+        <thead>
+            <tr>
+                <td>Product Name</td>
+                <td>Catagory</td>
+                <td>Price</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td></td>
+                    <td>@product.Price</td>
+                    <td>
+                        <button class="btnEdit" data-id="@product.id">edit</button>
+                        <button class="btnDelete" data-id="@product.id">Delete</button>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<script>
+    $("#btnSearch").click(function () {
+        var searchValue = $("#SearchField").val();
+
+        $.ajax({
+            type: "GET",
+            url: '/Product/ProductTable',
+            data: {
+                search: searchValue
+            }
+        })
+            .done(function (response) {
+                $("#tableContainer").html(response);
+               // alert('done');
+            })
+            .fail(function (XMttpRequest, textStatus, errorThrown) {
+                alert("fail");
+            });
+    });
+
+    $("#btnNew").click(function () {
+        $.ajax({
+            type: "GET",
+            url: '/Product/Create',
+        })
+            .done(function (response) {
+                $("#actionContainer").html(response);
+                $("actionContainer").html(" ");
+                // alert('done');
+            })
+            .fail(function (XMttpRequest, textStatus, errorThrown) {
+                alert("fail");
+            });
+    });
+
+    $(".btnDelete").click(function () {
+
+        var confirmDelete = confirm("Are you sure to delete");
+        if (confirmDelete) {
+            $.ajax({
+                type: 'POST',
+                url: '/Product/Delete',
+                data: {
+                    id: $(this).attr('data-id')
+                }
+            })
+                .done(function (response) {
+                    $("#tableContainer").html(response);
+                    // alert('done');
+                })
+                .fail(function (XMttpRequest, textStatus, errorThrown) {
+                    alert("fail");
+                });
+        }
+        
+    });
+
+    $(".btnEdit").click(function () {
+        $.ajax({
+            type: "GET",
+            url: '/Product/edit',
+            data: {
+                id: $(this).attr('data-id')
+            }
+        })
+            .done(function (response) {
+                $("#tableContainer").html(response);
+                // alert('done');
+            })
+            .fail(function (XMttpRequest, textStatus, errorThrown) {
+                alert("fail");
+            });
+    });
+</script>

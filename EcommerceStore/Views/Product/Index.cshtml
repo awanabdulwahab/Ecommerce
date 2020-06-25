@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <form method="post">
+        <input type="search" name="Search" id="SearchField" />
+        <button type="button" id="btnSearch">Search</button>
+    </form>
+</div>
+
+<button id="btnNew">New</button>
+
+<div id="tableContainer">
+    @{
+        Html.RenderAction("ProductTable");
+    }
+</div>
+
+<div id="actionContainer">
+
+</div>
+
+
+
+
+
