@@ -1,10 +1,12 @@
 ﻿using EcommerceClassLibrary;
 using EcommerceServices;
+using EcommerceStore.ViewModels;
 using Microsoft.Ajax.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Mvc;
 
@@ -33,13 +35,22 @@ namespace EcommerceStore.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            return PartialView();
+            CatagoriesService catagoriesService = new CatagoriesService();
+            var listofCatagory = catagoriesService.GetCatagories();
+            return PartialView(listofCatagory);
         }
         // POST: Product
         [HttpPost]
-        public ActionResult Create(ProductModel product)
+        public ActionResult Create(NewCatagoryViewModel model)
         {
-            productsService.SaveProduct(product);
+            var newproduct = new ProductModel();
+            newproduct.Name = model.Name;
+            newproduct.Description = model.Description;
+            newproduct.Price = model.Price;
+
+            CatagoriesService catagoriesService = new CatagoriesService();
+            newproduct.Catagory = catagoriesService.GetCatagory(model.CatagoryId);
+            productsService.SaveProduct(newproduct);
             return RedirectToAction("ProductTable");
         }  
         

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace EcommerceServices
 {
@@ -14,6 +15,7 @@ namespace EcommerceServices
         {
             using(var context = new EcommerceStoreContext())
             {
+                context.Entry(product.Catagory).State = System.Data.Entity.EntityState.Unchanged;
                 context.Products.Add(product);
                 context.SaveChanges();
             }
@@ -41,7 +43,7 @@ namespace EcommerceServices
         {
             using(var context = new EcommerceStoreContext())
             {
-                return context.Products.ToList();
+                return context.Products.Include(x=> x.Catagory).ToList();
             }
         }
         public ProductModel GetProduct(int id)
