@@ -1,5 +1,11 @@
-﻿@{
+﻿@model EcommerceStore.ViewModels.HomeViewModel
+@{
     ViewBag.Title = "Home Page";
+
+    var firstCatagory = Model.Catagories.Where(x =>x.ImageURL != null).First();
+    var kidsCatagory = Model.Catagories.Where(x =>x.Name == "Kids").First();
+    var accessoriesCatagory = Model.Catagories.Where(x =>x.Name == "accessories").First();
+    var womenCatagory = Model.Catagories.Where(x =>x.Name == "women").First();
 }
 
 <!-- SLIDER -->
@@ -179,7 +185,7 @@
         </ul>
     </div>
 </div>
-<!-- END SLIDER -->
+<!-- END SLIDER 
 <!-- IMAGE BOX -->
 <section class="flat-row row-image-box">
     <div class="container">
@@ -189,7 +195,7 @@
                     <div class="item data-effect-item">
                         <div class="inner">
                             <div class="thumb">
-                                <img src="~/Content/images/image-box/imgbox-1-375x500.jpg" alt="Image">
+                                <img src="@firstCatagory.ImageURL" alt="Image">
                                 <div class="elm-btn">
                                     <a href="#" class="themesflat-button bg-white width-150">For Men’s</a>
                                 </div>
@@ -204,7 +210,7 @@
                     <div class="item data-effect-item">
                         <div class="inner">
                             <div class="thumb">
-                                <img src="~/Content/images/image-box/imgbox-1-375x240.jpg" alt="Image">
+                                <img src="@kidsCatagory.ImageURL" alt="Image">
                                 <div class="elm-btn">
                                     <a href="#" class="themesflat-button bg-white width-150">For Kid’s</a>
                                 </div>
@@ -216,7 +222,7 @@
                     <div class="item data-effect-item">
                         <div class="inner">
                             <div class="thumb">
-                                <img src="~/Content/images/image-box/imgbox-2-375x240.jpg" alt="Image">
+                                <img src="@accessoriesCatagory.ImageURL" alt="Image">
                                 <div class="elm-btn">
                                     <a href="#" class="themesflat-button bg-white width-150">accessories</a>
                                 </div>
@@ -231,7 +237,7 @@
                     <div class="item data-effect-item">
                         <div class="inner">
                             <div class="thumb">
-                                <img src="~/Content/images/image-box/imgbox-2-375x500.jpg" alt="Image">
+                                <img src="@womenCatagory.ImageURL" alt="Image">
                                 <div class="elm-btn">
                                     <a href="#" class="themesflat-button bg-white width-150">For woMen’s</a>
                                 </div>

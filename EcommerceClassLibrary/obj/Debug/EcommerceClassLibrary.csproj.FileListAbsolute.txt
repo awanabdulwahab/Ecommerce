@@ -1,6 +1,6 @@
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceClassLibrary\bin\Debug\EcommerceClassLibrary.dll
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceClassLibrary\bin\Debug\EcommerceClassLibrary.pdb
-D:\UET\Summer\Ecommerce\Ecommerce\EcommerceClassLibrary\obj\Debug\EcommerceClassLibrary.csprojAssemblyReference.cache
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceClassLibrary\obj\Debug\EcommerceClassLibrary.csproj.CoreCompileInputs.cache
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceClassLibrary\obj\Debug\EcommerceClassLibrary.dll
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceClassLibrary\obj\Debug\EcommerceClassLibrary.pdb
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceClassLibrary\obj\Debug\EcommerceClassLibrary.csprojAssemblyReference.cache

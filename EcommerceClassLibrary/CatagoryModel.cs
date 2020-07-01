@@ -8,6 +8,7 @@ namespace EcommerceClassLibrary
 {
     public class CatagoryModel: BaseModel
     {
+        public string ImageURL { get; set; }
         public List<ProductModel> Products { get; set; }
     }
 }
