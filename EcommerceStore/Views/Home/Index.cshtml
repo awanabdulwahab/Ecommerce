@@ -2,10 +2,10 @@
 @{
     ViewBag.Title = "Home Page";
 
-    var firstCatagory = Model.Catagories.Where(x =>x.ImageURL != null).First();
-    var kidsCatagory = Model.Catagories.Where(x =>x.Name == "Kids").First();
-    var accessoriesCatagory = Model.Catagories.Where(x =>x.Name == "accessories").First();
-    var womenCatagory = Model.Catagories.Where(x =>x.Name == "women").First();
+    var firstCatagory = Model.Catagories.Where(x => x.ImageURL != null).First();
+    var kidsCatagory = Model.Catagories.Where(x => x.Name == "Kids" && x.ImageURL != null).First();
+    var accessoriesCatagory = Model.Catagories.Where(x => x.Name == "accessories").First();
+    var womenCatagory = Model.Catagories.Where(x => x.Name == "Women" && x.ImageURL != null).First();
 }
 
 <!-- SLIDER -->
@@ -197,7 +197,7 @@
                             <div class="thumb">
                                 <img src="@firstCatagory.ImageURL" alt="Image">
                                 <div class="elm-btn">
-                                    <a href="#" class="themesflat-button bg-white width-150">For Men’s</a>
+                                    <a href="#" class="themesflat-button bg-white width-150">@firstCatagory.Name</a>
                                 </div>
                                 <div class="overlay-effect bg-color-1"></div>
                             </div>
@@ -212,7 +212,7 @@
                             <div class="thumb">
                                 <img src="@kidsCatagory.ImageURL" alt="Image">
                                 <div class="elm-btn">
-                                    <a href="#" class="themesflat-button bg-white width-150">For Kid’s</a>
+                                    <a href="#" class="themesflat-button bg-white width-150">@kidsCatagory.Name</a>
                                 </div>
                                 <div class="overlay-effect bg-color-1"></div>
                             </div>
@@ -239,7 +239,7 @@
                             <div class="thumb">
                                 <img src="@womenCatagory.ImageURL" alt="Image">
                                 <div class="elm-btn">
-                                    <a href="#" class="themesflat-button bg-white width-150">For woMen’s</a>
+                                    <a href="#" class="themesflat-button bg-white width-150">@womenCatagory.Name</a>
                                 </div>
                                 <div class="overlay-effect bg-color-1"></div>
                             </div>

@@ -3,42 +3,44 @@
 @{
     ViewBag.Title = "Create";
 }
+<div class="col-md-8">
+    <h2>Create Product</h2>
 
-<h2>Create Product</h2>
+    <form method="post" id="CreateProduct" class="form-control">
+        <label>Catagories</label>
+        <select name="CatagoryId">
+            @foreach (var catagory in Model)
+            {
+                <option value="@catagory.id">@catagory.Name</option>
+            }
 
-<form method="post" id="CreateProduct">
-    <label>Catagories</label>
-    <select name="CatagoryId">
-        @foreach (var catagory in Model)
-        {
-            <option value="@catagory.id">@catagory.Name</option>
-        }
+        </select>
+        <br />
 
-    </select>
-    <br />
+        <label>Name</label>
+        <input type="text" name="name" value="" />
+        <br />
 
-    <label>Name</label>
-    <input type="text" name="name" value="" />
-    <br />
+        <label>Description</label>
+        <input type="text" name="Description" value="" />
 
-    <label>Description</label>
-    <input type="text" name="Description" value="" />
+        <br />
 
-    <br />
+        <label>Price</label>
+        <input type="number" name="Price" value="" />
 
-    <label>Price</label>
-    <input type="number" name="Price" value="" />
+        <br />
+        <label>Image</label>
+        <input id="ImageURL" type="hidden" name="ImageURL" value="" />
+        <input id="imageUpload" type="file" name="Image" value="" accept=".png, .jpg" />
+        <div class="thumb">
+            <img id="catagoryImage" />
+        </div>
+        <br />
+        <button type="button" id="btnSave">Save</button>
+    </form>
 
-    <br />
-    <label>Image</label>
-    <input id="ImageURL" type="hidden" name="ImageURL" value="" />
-    <input id="imageUpload" type="file" name="Image" value="" accept=".png, .jpg" />
-    <div class="thumb">
-        <img id="catagoryImage" />
-    </div>
-    <br />
-    <button type="button" id="btnSave">Save</button>
-</form>
+</div>
 
 <script>
     $("#btnSave").click(function () {

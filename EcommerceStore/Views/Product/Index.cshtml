@@ -3,25 +3,41 @@
     ViewBag.Title = "Index";
 }
 
-<div>
-    <form method="post">
-        <input type="search" name="Search" id="SearchField" />
-        <button type="button" id="btnSearch">Search</button>
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <form method="post">
+                        <label>Search</label>
+                        <input type="search" name="Search" id="SearchField" />
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                    <label>Action</label><br />
+                    <button type="button" id="btnSearch">Search</button>
+                    <button id="btnNew">New</button>
+
+            </div>
+    
+        </div>
+
+
+
+        <div id="tableContainer">
+            @{
+                Html.RenderAction("ProductTable");
+            }
+        </div>
+    </div>
+<div class="container">
+
+
+    <div id="actionContainer">
+        <hr />
+    </div>
+
 </div>
-
-<button id="btnNew">New</button>
-
-<div id="tableContainer">
-    @{
-        Html.RenderAction("ProductTable");
-    }
-</div>
-
-<div id="actionContainer">
-
-</div>
-
 
 
 

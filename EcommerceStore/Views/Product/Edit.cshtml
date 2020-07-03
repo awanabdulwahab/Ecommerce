@@ -3,25 +3,35 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit Product</h2>
+    <div class="col-md-8 form-control">
+        <h2>Edit Product</h2>
+        <form method="post" id="editProduct">
+            <input type="hidden" name="id" value="@Model.id" />
+            <label>Catagory</label>
+            <select>
+                <option value="Catagory">@Model.Catagory"</option>
+            </select>
+            <br />
+            <label>Name</label>
+            <input type="text" name="name" value="@Model.Name" />
+            <br />
 
-<form method="post" id="editProduct">
-    <input type="hidden" name="id" value="@Model.id" />
-    <label>Name</label>
-    <input type="text" name="name" value="@Model.Name" />
-    <br />
+            <label>Description</label>
+            <input type="text" name="Description" value="@Model.Description" />
 
-    <label>Description</label>
-    <input type="text" name="Description" value="@Model.Description" />
+            <br />
 
-    <br />
+            <label>Price</label>
+            <input type="number" name="Price" value="@Model.Price" />
 
-    <label>Price</label>
-    <input type="number" name="Price" value="@Model.Price" />
+            <br />
+            <button type="button" id="btnUpdate">Save</button>
+        </form>
 
-    <br />
-    <button type="button" id="btnUpdate">Save</button>
-</form>
+    </div>
+
+
+
 
 <script>
     $("#btnUpdate").click(function () {
