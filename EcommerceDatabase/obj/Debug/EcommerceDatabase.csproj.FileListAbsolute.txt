@@ -15,3 +15,4 @@ D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.Migrations.intialized.resources
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.csproj.GenerateResource.cache
 D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.Migrations.ImageURLAdded.resources
+D:\UET\Summer\Ecommerce\Ecommerce\EcommerceDatabase\obj\Debug\EcommerceDatabase.Migrations.addedisFeatured.resources

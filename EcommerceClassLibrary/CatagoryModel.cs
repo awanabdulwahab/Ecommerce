@@ -10,5 +10,7 @@ namespace EcommerceClassLibrary
     {
         public string ImageURL { get; set; }
         public List<ProductModel> Products { get; set; }
+
+        public bool isFeatured { get; set; }
     }
 }

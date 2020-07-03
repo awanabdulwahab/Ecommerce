@@ -1,6 +1,8 @@
 ﻿@model EcommerceClassLibrary.CatagoryModel
 @{
     ViewBag.Title = "Edit";
+    var trueChecked = Model.isFeatured ? "checked" : string.Empty;
+    var falseChecked = !Model.isFeatured ? "checked" : string.Empty;
 }
 
 <h2>Edit Catagory</h2>
@@ -14,5 +16,11 @@
     <input type="text" name="Description" value="" />
 
     <br />
+
+    <label>Is Featured</label>
+    <input type="radio" name="isFeatured" value="True" @trueChecked/>True
+    <input type="radio" name="isFeatured" value="False" @falseChecked/>False
+    <br />
+
     <button type="submit">Save</button>
 </form>

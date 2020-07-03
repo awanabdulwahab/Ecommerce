@@ -44,6 +44,15 @@ namespace EcommerceServices
                 return context.Catagories.ToList();
             }
         }
+
+        public List<CatagoryModel> GetFeatureCatagories()
+        {
+            using (var context = new EcommerceStoreContext())
+            {
+                
+                return context.Catagories.Where(x => x.isFeatured && x.ImageURL != null).ToList();
+            }
+        }
         public CatagoryModel GetCatagory(int id)
         {
             using(var context = new EcommerceStoreContext())

@@ -8,6 +8,7 @@ namespace EcommerceStore.ViewModels
 {
     public class HomeViewModel
     {
-        public List<CatagoryModel> Catagories { get; set; }
+        public List<CatagoryModel> FeatureCatagories { get; set; }
+        public List<ProductModel> FeatureProducts { get; set; }
     }
 }
